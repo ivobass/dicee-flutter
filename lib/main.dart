@@ -22,12 +22,20 @@ class DicePage extends StatelessWidget {
       child: Row(
         children: <Widget>[
           Expanded(
-            child: RaisedButton(
-              child: Image.asset('images/dice1.png'),
+            child: FlatButton(
+              onPressed: () {
+                print('Click Left...');
+              },
+              child: Image.asset('images/dice1.png'), 
             ),
           ),
           Expanded(
-            child: FlatButton(child: Image.asset('images/dice2.png')),
+            child: FlatButton(
+              onPressed: () {
+                print('Click Right...');
+              },
+              
+              child: Image.asset('images/dice2.png')),
           ),
         ],
       ),
